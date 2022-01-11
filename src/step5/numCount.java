@@ -28,7 +28,8 @@ public class numCount {
 		String sum = String.valueOf(a * b * c); //곱한 값을 String 형식으로 변환
 
 		for (int i = 0; i < sum.length(); i++) {
-			num[(sum.charAt(i) - 48)]++; //0~9에 해당하는 숫자의 갯수를 카운팅
+			//for문을 통해 해당 문자열의 문자 값 - 0 을 추출
+			num[(sum.charAt(i) - 0)]++; //0~9에 해당하는 숫자의 갯수를 카운팅
 		}
 
 		for (int i = 0; i < num.length; i++) {
