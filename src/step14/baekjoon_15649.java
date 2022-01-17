@@ -3,7 +3,7 @@ package step14;
 import java.io.*;
 import java.util.*;
 
-//백준 15629번 백트랙킹문제 - N과 M
+//백준 15649번 백트랙킹문제 - N과 M
 //백트래킹은 해당 범위 내에서 조건을 추가하여 값의 유망성을 판단함. 
 //백트랭킹 방법: DFS(깊이우선), BEF(너비우선)
 //https://st-lab.tistory.com/114  참고
