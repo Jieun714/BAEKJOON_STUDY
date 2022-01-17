@@ -3,6 +3,8 @@ package step11;
 import java.io.*;
 import java.util.*;
 
+//백준 7568번 덩치
+//2치원 배열을 사용하여, 몸무게와 키를 저장 후 비교
 public class heightWeight {
 
 	public static void main(String[] args) throws IOException {
