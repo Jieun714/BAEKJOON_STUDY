@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 //백준 14888번 연산자 끼워넣기
-public class jaekjoon_14888 {
+public class baekjoon_14888 {
 
 	//재귀부분에서 최댓값과 최솟값을 갱신시키기 떄문에, MAX의 값을 MIN_VALUE로 잡음
 	public static int MAX = Integer.MIN_VALUE;  //최댓값

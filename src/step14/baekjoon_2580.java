@@ -5,7 +5,7 @@ import java.util.*;
 
 //백준 2580번 스도쿠문제
 //https://st-lab.tistory.com/119 참조
-public class jaekjoon_2580 {
+public class baekjoon_2580 {
 
 	public static int[][] arr = new int[9][9]; // 9x9배열
 	public static StringBuilder sb = new StringBuilder();
