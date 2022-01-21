@@ -56,7 +56,7 @@ public class baekjoon_3055 {
 
 				if (map[r][c] == 'S') { // S는 고슴도치
 					st = new Point(r, c, 'S');
-				} else if (map[r][c] == '*') { // *는 비어 있는 곳
+				} else if (map[r][c] == '*') { // *는 물이 있는 곳
 					queue.add(new Point(r, c, '*'));
 				}
 			}
