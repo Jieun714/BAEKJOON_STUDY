@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-//백준 11047번 동전
-//그리디 알고리즘: 선택에서 가장 좋은 선택을 찾음
+// 백준 11047번 동전
+// 그리디 알고리즘: 선택에서 가장 좋은 선택을 찾음
 public class baekjoon_11047 {
 
 	public static void main(String[] args) throws IOException {
