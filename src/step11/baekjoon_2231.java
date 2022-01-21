@@ -5,7 +5,7 @@ import java.util.*;
 
 //백준 2231번 분헤합
 //n = m + 100의 자리 + 10의 자리 + 1의 자리
-//브루트 포스: 조합 가능한 모든 문자열을 하나씩 대입해 보는 방식으로 암포를 해독하는 방법
+//브루트 포스: 조합 가능한 모든 문자열을 하나씩 대입해 보는 방식으로 암포를 해독하는 방법.
 public class baekjoon_2231 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
