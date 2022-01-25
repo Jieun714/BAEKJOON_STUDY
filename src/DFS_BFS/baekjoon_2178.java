@@ -47,7 +47,7 @@ public class baekjoon_2178 {
 		while (!queue.isEmpty()) { // 큐가 비지 않았을 때
 			int val[] = queue.poll(); // queue.poll();
 			check[x][y] = true; // 방문했다는 초기값
-
+			
 			int nx = val[0];
 			int ny = val[1];
 
@@ -65,7 +65,6 @@ public class baekjoon_2178 {
 				queue.add(new int[] { nextX, nextY });  //다음 방문 지점을 큐에 넣음
 				map[nextX][nextY] = map[nx][ny] + 1;  //좌표를 +1
 				check[nextX][nextY] = true;  //방문 완료
-
 			}
 		}
 	}
