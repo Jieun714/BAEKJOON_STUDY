@@ -11,7 +11,6 @@ import java.util.StringTokenizer;
 //익은 토마토를 기준으로 퍼져나가야하기 때문에, BFS 사용
 //가로세로높이가 다 있기떄문에, 2차원 배열이 아닌 3차원 배열 사용, 상하좌우위아래 
 //1: 익은 토마토, 0: 익지 않은 토마토, -1: 토마토가 없는 칸
-//참조: https://yongku.tistory.com/entry/%EB%B0%B1%EC%A4%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B0%B1%EC%A4%80-7569%EB%B2%88-%ED%86%A0%EB%A7%88%ED%86%A0-%EC%9E%90%EB%B0%94Java
 class Point {
 	int row;
 	int col;
