@@ -26,9 +26,9 @@ class Point {
 public class baekjoon_7569 {
 	static int M, N, H;  //가로,세로,높이
 	static int[][][] map;
-	static int[] rowArr = { -1, 0, 1, 0, 0, 0 }; // 상 하 좌 우 위 아래
-	static int[] colArr = { 0, 1, 0, -1, 0, 0 };
-	static int[] heightArr = { 0, 0, 0, 0, 1, -1 };
+	static int[] rowArr = { -1, 1, 0, 0, 0, 0 }; // 상 하 좌 우 위 아래
+	static int[] colArr = { 0, 0, -1, 1, 0, 0 };
+	static int[] heightArr = { 0, 0, 0, 0, -1, 1 };
 	static Queue<Point> q = new LinkedList<Point>();
 	static StringBuilder sb = new StringBuilder();
 	
@@ -53,12 +53,12 @@ public class baekjoon_7569 {
 				}
 			}
 		}
-		bfs();
-		System.out.print(sb);
-//		System.out.print(bfs());
+//		bfs();
+//		System.out.print(sb);
+		System.out.print(bfs());
 	}
 
-	public static void bfs() {
+	public static int bfs() {
 		while (!q.isEmpty()) {
 			Point point = q.poll();
 
@@ -87,8 +87,8 @@ public class baekjoon_7569 {
 			for (int j = 0; j < N; j++) {
 				for (int k = 0; k < M; k++) {
 					if (map[i][j][k] == 0) {
-						sb.append(-1); 
-//						return -1;
+//						sb.append(-1); 
+						return -1;
 					}
 
 					days = Math.max(days, map[i][j][k]);
@@ -97,11 +97,11 @@ public class baekjoon_7569 {
 		}
 
 		if (days == 1) {
-			sb.append(0);
-//			return 0;
+//			sb.append(0);
+			return 0;
 		} else {
-			sb.append(days-1);
-//			return days-1;
+//			sb.append(days-1);
+			return days-1;
 		}
 	}
 }
