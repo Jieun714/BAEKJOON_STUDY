@@ -26,8 +26,8 @@ class Point {
 public class baekjoon_7569 {
 	static int M, N, H;  //가로,세로,높이
 	static int[][][] map;
-	static int[] rowArr = { -1, 1, 0, 0, 0, 0 }; // 상 하 좌 우 위 아래
-	static int[] colArr = { 0, 0, -1, 1, 0, 0 };
+	static int[] rowArr = { 0, 0, -1, 1, 0, 0 }; // 상 하 좌 우 위 아래
+	static int[] colArr = { -1, 1, 0, 0, 0, 0 };
 	static int[] heightArr = { 0, 0, 0, 0, -1, 1 };
 	static Queue<Point> q = new LinkedList<Point>();
 	static StringBuilder sb = new StringBuilder();
