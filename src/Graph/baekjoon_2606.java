@@ -1,5 +1,11 @@
 package Graph;
 
+/**
+ * 문제: 어느 날 1번 컴퓨터가 웜 바이러스에 걸렸다. 컴퓨터의 수와 네트워크 상에서 서로 연결되어 있는 정보가 주어질 때,
+ *      1번 컴퓨터를 통해 웜 바이러스에 걸리게 되는 컴퓨터의 수를 출력하는 프로그램을 작성하시오.
+ *
+ * 큐를 사용해서 풀이
+ * */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
