@@ -1,5 +1,12 @@
 package Greedy;
 
+/**
+ * 문제: N개의 강의가 있다. 우리는 모든 강의의 시작하는 시간과 끝나는 시간을 알고 있다. 이때, 우리는 최대한 적은 수의 강의실을 사용하여 모든 강의가 이루어지게 하고 싶다.
+ *      물론, 한 강의실에서는 동시에 2개 이상의 강의를 진행할 수 없고, 한 강의의 종료시간과 다른 강의의 시작시간이 겹치는 것은 상관없다. 필요한 최소 강의실의 수를 출력하는 프로그램을 작성하시오.
+ *
+ * 알고리즘: 우선순위 큐 사용. 그리디 알고리즘
+ * */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,12 +21,12 @@ public class baekjoon_1374 {
             this.end = end;
         }
     }
-    static ArrayList <Meet> list;
-    static PriorityQueue <Integer> que;
+    static List<Meet> list;
+    static PriorityQueue<Integer> que;
     static int N, max;
 
     static void check(int num){
-        if(num == N-1) return;
+        if(num == N) return;
         //큐가 비지않으면서 que의 peek()보다 idx num에 해당하는 시작시간이 클 경우
         while(!que.isEmpty() && que.peek() <= list.get(num).start){
             que.poll();
