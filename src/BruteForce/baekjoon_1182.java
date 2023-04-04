@@ -1,4 +1,4 @@
-package Backtracking;
+package BruteForce;
 
 /**
  * 작성자: 이지은
