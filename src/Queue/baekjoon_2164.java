@@ -21,7 +21,7 @@ public class baekjoon_2164 {
         for(int i=1; i<N+1; i++) {
             que.add(i); //큐에 1~N을 넣어줌
         }
-
+        /**
         int front = que.poll(); //맨 위의 값을 제거
         while(!que.isEmpty()) { //카드가 하나가 남을 때까지
             front = que.poll(); //다음의 카드
@@ -30,5 +30,13 @@ public class baekjoon_2164 {
         }
 
         System.out.println(front); //출력
+        */
+
+        //2023.06.27 시간 단축
+        while(que.size()!=1){
+            que.poll(); //맨 앞 삭제
+            que.add(que.poll());
+        }
+        System.out.println(que.peek()); //제일 마지막에 남게 되는 카드 출력
     }
 }
