@@ -32,18 +32,18 @@ public class baekjoon_18290 {
         return flag;
     }
 
-    public static void dfs(int cnt, int sum, int r, int c){
+    public static void find(int cnt, int sum, int r, int c){
         if(cnt == arr[2]){ //K과 동일하다면
             answer = Math.max(answer, sum); //선택한 칸에 들어있는 수를 모두 더한 값의 최대 구하기
             return;
         }
 
         for(int i=r; i<arr[0]; i++){
-            for(int j=(r==i ? c:0); j<arr[1]; j++){
+            for(int j=0; j<arr[1]; j++){
                 if(isVisited[i][j]) continue; //방문했다면 다음으로
                 if(isCheck(i, j)){ //인접한 수가 아니라면
                     isVisited[i][j] = true; //방문체크
-                    dfs(cnt+1, sum + map[i][j], i, j);
+                    find(cnt+1, sum + map[i][j], i, j);
                     isVisited[i][j] = false; //방문해제
                 }
             }
@@ -66,7 +66,7 @@ public class baekjoon_18290 {
         }
 
         isVisited = new boolean[arr[0]][arr[1]];
-        dfs(0, 0, 0, 0);
+        find(0, 0, 0, 0);
 
         System.out.println(answer); //결과 출력
     }
